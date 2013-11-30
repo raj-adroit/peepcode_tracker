@@ -1,0 +1,4 @@
+desc "import videos data from peepcode.com"
+task :import, => :environment do
+
+end

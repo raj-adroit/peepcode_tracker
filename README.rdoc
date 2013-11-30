@@ -1,0 +1,25 @@
+== README
+
+* Ruby version
+
+	ruby 2.0.0p247 (2013-06-27 revision 41674) [i686-linux]
+
+* Rails version
+
+	Rails 4.0.1
+
+* Commands used
+
+	rails new video-tracker
+	cd video-tracker/
+	bundle install
+	rails g rspec:install
+	rails g controller welcome index
+	rails g model video title image link watched:boolean
+	rake db:migrate
+	rake import
+	mkdir spec/models/
+	rake spec:models
+	rails g bootstrap:install
+	rails g bootstrap:layout application fixed
+	rails g backbone:install
