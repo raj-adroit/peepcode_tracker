@@ -32,8 +32,7 @@ $(document).ready(function(){
 			if(model.get('watched') ==  true) {
 				$(view.el).addClass('watched');
 			}
-			var img = $('<img/>').attr({ 'src' : model.get('image')});
-			$(view.el).append(img);
+			//$(view.el).append(img);
 			$('ul.screencasts').append(view.render());	
     	}
     });
@@ -56,7 +55,8 @@ $(document).ready(function(){
 			$(this.el).toggleClass('watched');
 		},
 		render : function(){
-			return $(this.el).text(this.model.get('title'));
+			var img = $('<img/>').attr({ 'src' : this.model.get('image'), 'class' : 'img-rounded'});
+			return $(this.el).text(this.model.get('title')).append(img);
 		}
 	});
 
